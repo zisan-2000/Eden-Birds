@@ -40,15 +40,20 @@ const Footer = () => {
               </div> */}
             </div>
           </div>
-          <h1 className="text-center text-xl font-bold sm:text-2xl">
-            <a href="/#home" className="heading">
-              EDEN
-              <span className="ml-1 inline-block font-bold text-primary">
-                {" "}
+          <h1 className="text-center font-serif text-2xl font-bold tracking-wider sm:text-4xl">
+            <a
+              href="/#home"
+              className="flex items-center justify-center transition duration-300 ease-in-out hover:text-primary"
+            >
+              <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                EDEN
+              </span>
+              <span className="ml-2 inline-block text-primary drop-shadow-lg">
                 BIRDS
               </span>
             </a>
           </h1>
+
           <p className="mt-2 text-center">
             EDEN BIRDS is a pioneering software company dedicated to
             transforming innovative ideas into reality.

@@ -47,10 +47,15 @@ const Navbar2 = () => {
                 style={{ filter: theme === "dark" ? "invert(1)" : "invert(0)" }}
               />
             </div>
-            <div className="ml-3 text-xl text-white md:text-2xl">
-              <NavLink to="/" className="heading">
-                EDEN
-                <span className="ml-1 inline-block font-bold text-primary">
+            <div className="ml-3 text-xl md:text-3xl">
+              <NavLink
+                to="/"
+                className="flex items-center font-serif tracking-wide text-white transition duration-300 ease-in-out hover:text-primary"
+              >
+                <span className="bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                  EDEN
+                </span>
+                <span className="ml-1 inline-block font-bold text-primary drop-shadow-lg">
                   BIRDS
                 </span>
               </NavLink>
@@ -514,8 +519,8 @@ const Navbar2 = () => {
                   <div>
                     <p className="text-sm text-white">Call us on</p>
                     <p className="text-lg font-semibold text-white">
-                      <a href="tel:+91123456789" className="hover:underline">
-                        01793-874189
+                      <a href="tel:01842781978" className="hover:underline">
+                        01842781978
                       </a>
                     </p>
                   </div>
