@@ -48,7 +48,7 @@ const Navbar2 = () => {
               />
             </div>
             <div className="ml-3 text-xl text-white md:text-2xl">
-              <NavLink to="/" className="flex items-center">
+              <NavLink to="/" className="heading">
                 EDEN
                 <span className="ml-1 inline-block font-bold text-primary">
                   BIRDS

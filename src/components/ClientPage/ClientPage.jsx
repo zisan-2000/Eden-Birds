@@ -2,40 +2,41 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import nahl from "../../assets/ann-nahl.png";
 
 const clients = [
   {
-    name: "Client One",
-    logo: "https://via.placeholder.com/100",
+    name: "Ann-Nahl Software",
+    logo: nahl, // Update with actual logo URL
     description:
-      "Client One is a leading company in industry X, providing top-notch solutions to their customers.",
-    website: "https://www.clientone.com",
-    contact: "contact@clientone.com",
-    services: ["Service A", "Service B", "Service C"],
+      "Ann-Nahl Software provides cutting-edge software solutions for businesses, with a focus on quality and customer satisfaction.",
+    website: "https://aan-nahl.com/",
+    contact: "contact@annnahlsoftware.com",
+    services: ["Software Development", "Consulting", "Custom Solutions"],
     testimonial:
-      "Client One has significantly improved our business operations with their excellent service and support.",
+      "Ann-Nahl Software has transformed the way we operate, delivering high-quality software solutions tailored to our needs.",
   },
   {
-    name: "Client Two",
-    logo: "https://via.placeholder.com/100",
+    name: "BuzzMoving",
+    logo: "https://via.placeholder.com/100", // Update with actual logo URL
     description:
-      "Client Two specializes in Y and is known for their innovative approach and customer satisfaction.",
-    website: "https://www.clienttwo.com",
-    contact: "contact@clienttwo.com",
-    services: ["Service D", "Service E", "Service F"],
+      "BuzzMoving offers a seamless moving experience, ensuring that all relocations are handled with care and precision.",
+    website: "https://www.buzzmoving.com",
+    contact: "contact@buzzmoving.com",
+    services: ["Residential Moving", "Commercial Moving", "Storage Services"],
     testimonial:
-      "The team at Client Two is outstanding. They delivered beyond our expectations.",
+      "BuzzMoving made our relocation stress-free. Their team is efficient, professional, and reliable.",
   },
   {
-    name: "Client Three",
-    logo: "https://via.placeholder.com/100",
+    name: "Seo-Core",
+    logo: "https://via.placeholder.com/100", // Update with actual logo URL
     description:
-      "Client Three has been a pioneer in Z, setting standards with their exceptional services.",
-    website: "https://www.clientthree.com",
-    contact: "contact@clientthree.com",
-    services: ["Service G", "Service H", "Service I"],
+      "Seo-Core specializes in boosting online visibility for businesses, using advanced SEO techniques to drive growth.",
+    website: "https://www.seo-core.com",
+    contact: "contact@seo-core.com",
+    services: ["SEO Optimization", "Content Marketing", "Digital Strategy"],
     testimonial:
-      "Client Three’s expertise in their field is unparalleled. We highly recommend them.",
+      "Seo-Core helped us significantly improve our search rankings and grow our online presence.",
   },
 ];
 
@@ -57,13 +58,7 @@ const ClientPage = () => {
   };
 
   return (
-    <div
-      className="mb-10"
-
-      // className={`${
-      //   darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"
-      // } min-h-screen py-10 transition-colors duration-500`}
-    >
+    <div className="mb-10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="heading">Our Clients</h1>
 

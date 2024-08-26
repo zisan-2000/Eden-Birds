@@ -1,0 +1,82 @@
+import React from "react";
+import angularLogo from "../assets/angular.jpg";
+import backboneLogo from "../assets/chakra_ui.png";
+import emberLogo from "../assets/mui.png";
+import reactLogo from "../assets/react.jpg";
+import svelteLogo from "../assets/redux.jpg";
+import vueLogo from "../assets/vue.png";
+
+const FrontendTechnologiesStatic = () => {
+  // Static data for technologies
+  const technologies = [
+    {
+      id: 1,
+      name: "React.js",
+      category: "frontend",
+      description: "A JavaScript library for building user interfaces.",
+      image: reactLogo,
+    },
+    {
+      id: 2,
+      name: "Vue.js",
+      category: "frontend",
+      description: "The Progressive JavaScript Framework.",
+      image: vueLogo,
+    },
+    {
+      id: 3,
+      name: "Angular",
+      category: "frontend",
+      description: "One framework. Mobile & desktop.",
+      image: angularLogo,
+    },
+    {
+      id: 4,
+      name: "Redux",
+      category: "frontend",
+      description:
+        "Cybernetically enhanced web apps with a radically new approach.",
+      image: svelteLogo,
+    },
+    {
+      id: 5,
+      name: "MUI",
+      category: "frontend",
+      description: "A framework for ambitious web developers.",
+      image: emberLogo,
+    },
+    {
+      id: 6,
+      name: "Chakra_UI",
+      category: "frontend",
+      description:
+        "Gives structure to web applications by providing models with key-value binding.",
+      image: backboneLogo,
+    },
+  ];
+
+  return (
+    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {technologies
+        .filter((tech) => tech.category === "frontend")
+        .map((technology) => (
+          <div
+            key={technology.id}
+            className="flex transform flex-col items-center rounded-lg bg-white p-6 text-center shadow-lg transition duration-300 hover:scale-105"
+          >
+            <img
+              src={technology.image}
+              alt={technology.name}
+              className="mb-4 h-24 w-24 animate-spin-slow rounded-full border-4 border-gray-300 object-cover"
+            />
+            <h3 className="mb-2 text-2xl font-bold text-gray-800">
+              {technology.name}
+            </h3>
+            <p className="text-gray-600">{technology.description}</p>
+          </div>
+        ))}
+    </div>
+  );
+};
+
+export default FrontendTechnologiesStatic;

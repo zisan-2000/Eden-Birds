@@ -9,22 +9,22 @@ import BooksView from "./fetaures/books/BooksView";
 import EditBook from "./fetaures/books/EditBook";
 import AboutUs from "./pages/AboutUs";
 import AppDev from "./pages/AppDev";
-import BackendTechnologies from "./pages/BackendTechnologies";
-import BlogList from "./pages/BlogList";
+import BackendTechnologiesStatic from "./pages/BackendTechnologiesStatic";
+import BlogsPage from "./pages/BlogsPage";
 import Cloud from "./pages/Cloud";
 import ContactForm from "./pages/ContactForm";
 import Error from "./pages/Error";
-import FrontendTechnologies from "./pages/FrontendTechnologies";
+import FrontendTechnologiesStatic from "./pages/FrontendTechnologiesStatic";
 import GetStartedPage from "./pages/GetStartedPage";
 import Home from "./pages/Home";
 import IOSAppDev from "./pages/IOSAppDev";
-import JobPostList from "./pages/JobPostList";
+import JobPostListStatic from "./pages/JobPostListStatic";
 import LearnMorePage from "./pages/LearnMorePage";
 import MobileApp from "./pages/MobileApp";
 import Privacy from "./pages/Privacy";
 import ProductPage from "./pages/ProductPage";
 import Services from "./pages/Services";
-import TeamList from "./pages/TeamList";
+import TeamListStatic from "./pages/TeamListStatic";
 import TechnologyList from "./pages/TechnologyList";
 import WebDev from "./pages/WebDev";
 
@@ -45,18 +45,18 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/team" element={<TeamList />} />
+          <Route path="/team" element={<TeamListStatic />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/privacy" element={<Privacy />} />
-          <Route path="/career" element={<JobPostList />} />
+          <Route path="/career" element={<JobPostListStatic />} />
           <Route path="/app" element={<AppDev />} />
           <Route path="/cloud" element={<Cloud />} />
           <Route path="/ios" element={<IOSAppDev />} />
           <Route path="/mobile" element={<MobileApp />} />
           <Route path="/web" element={<WebDev />} />
           <Route path="/technologies" element={<TechnologyList />}>
-            <Route path="frontend" element={<FrontendTechnologies />} />
-            <Route path="backend" element={<BackendTechnologies />} />
+            <Route path="frontend" element={<FrontendTechnologiesStatic />} />
+            <Route path="backend" element={<BackendTechnologiesStatic />} />
           </Route>
           <Route path="/add-book" element={<AddBook />} />
           <Route path="/show-books" element={<BooksView />} />
@@ -66,7 +66,7 @@ function App() {
           <Route path="/learn-more" element={<LearnMorePage />} />
           <Route path="/products/:tab" element={<ProductPage />} />
           <Route path="/test-your-iq" element={<TestYourIQ />} />
-          <Route path="/blogs" element={<BlogList />} />
+          <Route path="/blogs" element={<BlogsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

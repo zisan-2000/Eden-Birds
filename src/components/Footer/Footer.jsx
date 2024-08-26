@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
           <h1 className="text-center text-xl font-bold sm:text-2xl">
-            <a href="/#home" className="">
+            <a href="/#home" className="heading">
               EDEN
               <span className="ml-1 inline-block font-bold text-primary">
                 {" "}

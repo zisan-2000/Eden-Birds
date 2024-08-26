@@ -38,7 +38,7 @@ const BlogsPage = () => {
       <Navbar2 />
       <main className="flex-grow bg-gray-100 py-10">
         <div className="container mx-auto">
-          <h1 className="mb-10 text-center text-4xl font-bold">Blogs</h1>
+          <h1 className="heading">Blogs</h1>
           <BlogsList blogs={blogsData} />
         </div>
       </main>
