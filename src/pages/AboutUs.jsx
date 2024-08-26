@@ -89,11 +89,11 @@ const AboutUs = () => {
           >
             <img
               src={talatImage}
-              alt="Talat Mohammad"
+              alt="Talat Md. Tawfiq Elahi"
               className="mb-2 w-full rounded-lg"
             />
             <h3 className="mb-2 text-2xl font-semibold text-purple-600">
-              Talat Mohammad
+              Talat Md. Tawfiq Elahi
             </h3>
             <p className="text-lg text-gray-700">Co-Founder & CEO</p>
           </div>
@@ -104,11 +104,11 @@ const AboutUs = () => {
           >
             <img
               src={talatImage}
-              alt="Talat Mohammad"
+              alt="Talat Md. Tawfiq Elahi"
               className="mb-2 w-full rounded-lg"
             />
             <h3 className="mb-2 text-2xl font-semibold text-purple-600">
-              Talat Mohammad
+              Talat Md. Tawfiq Elahi
             </h3>
             <p className="text-lg text-gray-700">CTO</p>
           </div>
