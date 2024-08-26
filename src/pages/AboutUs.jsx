@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import talatImage from "./../assets/talat.webp";
-import zisanImage from "./../assets/zisan.jpg";
 import Navbar2 from "./../components/navbar/Navbar2";
 
 const AboutUs = () => {
@@ -119,14 +118,14 @@ const AboutUs = () => {
             } hover:scale-105 hover:transform hover:border-2 hover:border-green-600 hover:shadow-lg hover:duration-300`}
           >
             <img
-              src={zisanImage}
-              alt="Md. Zulfiker Hossain"
+              src={talatImage}
+              alt="Md.Amenul Islam"
               className="mb-2 w-full rounded-lg"
             />
             <h3 className="mb-2 text-2xl font-semibold text-purple-600">
-              Md. Zulfiker Hossain
+              Md.Amenul Islam
             </h3>
-            <p className="text-lg text-gray-700">Developer</p>
+            <p className="text-lg text-gray-700">COO</p>
           </div>
         </div>
       </div>

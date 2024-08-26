@@ -114,7 +114,7 @@ const Navbar2 = () => {
                             : "flex h-12 items-center gap-2"
                         }
                       >
-                        Meet Our Team
+                        Meet Our Executive Team
                       </NavLink>
                     </li>
 

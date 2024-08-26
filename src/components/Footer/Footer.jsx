@@ -165,7 +165,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-300 pb-4 pt-8 text-center">
-        <p>@copyright 2024 Travery || ZULFIKER</p>
+        <p>@copyright 2024 Talat</p>
         <button
           onClick={toggleTheme}
           className="mt-4 rounded-md border border-white px-4 py-2 focus:outline-none focus:ring-2 focus:ring-white"

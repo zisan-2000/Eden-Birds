@@ -3,11 +3,7 @@ import Footer from "../components/Footer/Footer";
 import Navbar2 from "../components/navbar/Navbar2";
 
 // Importing team member images
-import Intern1Image from "../assets/faysal.jpg";
-import Intern3Image from "../assets/sakib.jpg";
-import Intern2Image from "../assets/sourov.jpeg";
 import { default as CEOImage, default as CTOImage } from "../assets/talat.webp";
-import DeveloperImage from "../assets/zisan.jpg";
 
 const TeamListStatic = () => {
   const [theme, setTheme] = useState(
@@ -18,39 +14,21 @@ const TeamListStatic = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "MD. TALAT HOSSAIN",
+      name: "Talat Md. Tawfik Elahi",
       role: "CEO",
       image: CEOImage,
     },
     {
       id: 2,
-      name: "MD. TALAT HOSSAIN",
+      name: "Talat Md. Taufik Elahi",
       role: "CTO",
       image: CTOImage,
     },
     {
       id: 3,
-      name: "MD.ZULFIKER HOSSAIN",
-      role: "Developer",
-      image: DeveloperImage,
-    },
-    {
-      id: 4,
-      name: "Faysal",
-      role: "Intern",
-      image: Intern1Image,
-    },
-    {
-      id: 5,
-      name: "Sourov",
-      role: "Intern",
-      image: Intern2Image,
-    },
-    {
-      id: 6,
-      name: "Sakib",
-      role: "Intern",
-      image: Intern3Image,
+      name: "Md. Amenul Islam",
+      role: "COO",
+      image: CTOImage,
     },
   ];
 
@@ -78,21 +56,19 @@ const TeamListStatic = () => {
     return acc;
   }, {});
 
-  const roleOrder = ["CEO", "CTO", "Developer", "Intern", "Trainee"];
+  const roleOrder = ["CEO", "CTO", "COO"];
 
   return (
     <div className="dark:bg-slate-800">
       <Navbar2 toggleTheme={toggleTheme} />
-      <div className="container mx-auto px-5 py-10 dark:bg-slate-800 md:min-h-screen">
-        <h1 className="mb-12 animate-gradient-slow bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 bg-clip-text text-center text-5xl font-extrabold leading-relaxed text-transparent">
-          Meet Our Team
-        </h1>
+      <div className="container mx-auto justify-center px-5 py-10 text-center dark:bg-slate-800 md:min-h-screen">
+        <h1 className="heading2 md:text-5xl">Meet Our Executive Team</h1>
         <div className="container mx-auto ">
           {roleOrder.map(
             (role) =>
               groupedTeamMembers[role] && (
                 <div key={role} className="mb-10">
-                  <h2 className="mb-8 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-4xl font-bold text-transparent">
+                  <h2 className="mb-8 mt-4 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 bg-clip-text text-center text-4xl font-bold text-transparent">
                     {role}
                   </h2>
                   <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

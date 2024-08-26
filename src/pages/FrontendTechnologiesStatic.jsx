@@ -2,12 +2,13 @@ import React from "react";
 import angularLogo from "../assets/angular.jpg";
 import backboneLogo from "../assets/chakra_ui.png";
 import emberLogo from "../assets/mui.png";
+import nextjsLogo from "../assets/next js.png"; // Add Next.js logo
 import reactLogo from "../assets/react.jpg";
-import svelteLogo from "../assets/redux.jpg";
+import streamlitLogo from "../assets/streamlit.jpg"; // Add Streamlit logo
 import vueLogo from "../assets/vue.png";
 
 const FrontendTechnologiesStatic = () => {
-  // Static data for technologies
+  // Static data for frontend technologies
   const technologies = [
     {
       id: 1,
@@ -32,11 +33,10 @@ const FrontendTechnologiesStatic = () => {
     },
     {
       id: 4,
-      name: "Redux",
+      name: "Next.js",
       category: "frontend",
-      description:
-        "Cybernetically enhanced web apps with a radically new approach.",
-      image: svelteLogo,
+      description: "A React framework for production.",
+      image: nextjsLogo,
     },
     {
       id: 5,
@@ -47,11 +47,18 @@ const FrontendTechnologiesStatic = () => {
     },
     {
       id: 6,
-      name: "Chakra_UI",
+      name: "Chakra UI",
       category: "frontend",
       description:
         "Gives structure to web applications by providing models with key-value binding.",
       image: backboneLogo,
+    },
+    {
+      id: 7,
+      name: "Streamlit",
+      category: "frontend",
+      description: "A framework for creating data apps in pure Python.",
+      image: streamlitLogo,
     },
   ];
 

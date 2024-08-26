@@ -1,10 +1,10 @@
 import React from "react";
-import cakephpLogo from "../assets/cakephp.png";
 import djangoLogo from "../assets/django.png";
-import expressLogo from "../assets/express.png";
 import goLogo from "../assets/go.png";
+import laravelLogo from "../assets/laravel.png";
 import nodejsLogo from "../assets/nodejs.png";
 import pythonLogo from "../assets/python.png";
+import rustLogo from "../assets/rust.png";
 import springbootLogo from "../assets/springboot.png";
 
 const BackendTechnologiesStatic = () => {
@@ -19,13 +19,6 @@ const BackendTechnologiesStatic = () => {
     },
     {
       id: 2,
-      name: "Express.js",
-      category: "backend",
-      description: "Fast, unopinionated, minimalist web framework for Node.js.",
-      image: expressLogo,
-    },
-    {
-      id: 3,
       name: "Django",
       category: "backend",
       description:
@@ -33,7 +26,7 @@ const BackendTechnologiesStatic = () => {
       image: djangoLogo,
     },
     {
-      id: 4,
+      id: 3,
       name: "Spring Boot",
       category: "backend",
       description:
@@ -41,7 +34,7 @@ const BackendTechnologiesStatic = () => {
       image: springbootLogo,
     },
     {
-      id: 5,
+      id: 4,
       name: "Python",
       category: "backend",
       description:
@@ -49,7 +42,7 @@ const BackendTechnologiesStatic = () => {
       image: pythonLogo,
     },
     {
-      id: 6,
+      id: 5,
       name: "Go",
       category: "backend",
       description:
@@ -57,12 +50,20 @@ const BackendTechnologiesStatic = () => {
       image: goLogo,
     },
     {
-      id: 7,
-      name: "CakePHP",
+      id: 6,
+      name: "Rust",
       category: "backend",
       description:
-        "A rapid development framework for PHP that provides a structured framework for PHP applications.",
-      image: cakephpLogo,
+        "A system programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.",
+      image: rustLogo,
+    },
+    {
+      id: 7,
+      name: "Laravel",
+      category: "backend",
+      description:
+        "A PHP framework for web artisans, providing elegant syntax and robust tools.",
+      image: laravelLogo,
     },
   ];
 

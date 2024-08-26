@@ -16,7 +16,7 @@ const ResponsiveMenu = ({ showMenu }) => {
           <div className="flex items-center justify-start gap-3">
             <FaUserCircle size={50} />
             <div>
-              <h1>Md. Talat Hossain</h1>
+              <h1>Talat Md. Tawfiq Elahi</h1>
               <h1 className="text-sm text-slate-500">CEO</h1>
             </div>
           </div>
@@ -44,6 +44,18 @@ const ResponsiveMenu = ({ showMenu }) => {
                   }
                 >
                   About Us
+                </NavLink>
+              </li>
+              <li className="p-2 hover:bg-violet-200">
+                <NavLink
+                  to="/team"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "flex items-center gap-2 text-red-500"
+                      : "flex items-center gap-2"
+                  }
+                >
+                  Meet Our Executive Team
                 </NavLink>
               </li>
               <li className="p-2 hover:bg-violet-200">
