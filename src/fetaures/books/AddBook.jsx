@@ -26,13 +26,15 @@ const AddBook = () => {
   return (
     <div>
       <Navbar2 />
-      <div className="container mx-auto mb-10 mt-10 max-w-lg rounded-lg bg-white p-8 shadow-lg">
-        <h2 className="mb-6 text-3xl font-bold text-gray-800">Add Comments</h2>
+      <div className="container mx-auto mb-10 mt-10 max-w-lg rounded-lg bg-white p-8 shadow-lg dark:bg-slate-800">
+        <h2 className="mb-6 text-3xl font-bold text-gray-800 dark:text-purple-500">
+          Add Comments
+        </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-5">
             <label
               htmlFor="title"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-700 dark:text-white"
             >
               Title:
             </label>
@@ -49,7 +51,7 @@ const AddBook = () => {
           <div className="mb-5">
             <label
               htmlFor="Comment"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm font-medium text-gray-700 dark:text-white"
             >
               Comment:
             </label>

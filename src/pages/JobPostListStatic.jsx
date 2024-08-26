@@ -80,11 +80,11 @@ const JobPostListStatic = () => {
     <div>
       <Navbar2 />
 
-      <div className="mx-auto mb-10 mt-10 max-w-4xl rounded-lg bg-gray-100 p-6 text-black  md:min-h-screen">
-        <h1 className="mb-4 text-center text-3xl font-bold">
+      <div className="mx-auto mb-10 mt-10 max-w-4xl rounded-lg bg-gray-100 p-6 text-black  dark:bg-slate-800 md:min-h-screen">
+        <h1 className="mb-4 text-center text-3xl font-bold dark:text-white">
           Welcome to Careers at EDEN BIRDS
         </h1>
-        <p className="mb-8 text-center text-lg">
+        <p className="mb-8 text-center text-lg dark:text-white">
           EDEN BIRDS is a software company committed to excellence and
           innovation. We are always looking for talented individuals to join our
           team. Explore our current career opportunities below.
@@ -92,13 +92,15 @@ const JobPostListStatic = () => {
         {jobPosts.map((post) => (
           <div
             key={post.id}
-            className="mb-6 rounded-lg bg-gray-100 p-6 shadow-md"
+            className="mb-6 rounded-lg bg-gray-100 p-6 shadow-md dark:bg-slate-700"
           >
-            <h2 className="mb-2 text-2xl font-semibold text-black">
+            <h2 className="mb-2 text-2xl font-semibold text-black dark:text-white">
               {post.title}
             </h2>
-            <p className="mb-4 text-lg text-gray-800">{post.description}</p>
-            <p className="mb-4 text-lg text-gray-800">
+            <p className="mb-4 text-lg text-gray-800 dark:text-white">
+              {post.description}
+            </p>
+            <p className="mb-4 text-lg text-gray-800 dark:text-white">
               <strong>Location:</strong> {post.location}
             </p>
             <button

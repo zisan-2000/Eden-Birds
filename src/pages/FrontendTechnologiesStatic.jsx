@@ -56,23 +56,25 @@ const FrontendTechnologiesStatic = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8  md:grid-cols-2 lg:grid-cols-3">
       {technologies
         .filter((tech) => tech.category === "frontend")
         .map((technology) => (
           <div
             key={technology.id}
-            className="flex transform flex-col items-center rounded-lg bg-white p-6 text-center shadow-lg transition duration-300 hover:scale-105"
+            className="flex transform flex-col items-center rounded-lg bg-white p-6 text-center shadow-lg transition duration-300 hover:scale-105 dark:bg-slate-800"
           >
             <img
               src={technology.image}
               alt={technology.name}
               className="mb-4 h-24 w-24 animate-spin-slow rounded-full border-4 border-gray-300 object-cover"
             />
-            <h3 className="mb-2 text-2xl font-bold text-gray-800">
+            <h3 className="mb-2 text-2xl font-bold text-gray-800 dark:text-white">
               {technology.name}
             </h3>
-            <p className="text-gray-600">{technology.description}</p>
+            <p className="text-gray-600 dark:text-white">
+              {technology.description}
+            </p>
           </div>
         ))}
     </div>

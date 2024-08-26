@@ -168,7 +168,7 @@ const ResponsiveMenu = ({ showMenu }) => {
               </li>
               <li className="p-2 hover:text-primary">
                 <NavLink
-                  to="/Technologies"
+                  to="/technologies/frontend"
                   className={({ isActive }) =>
                     isActive
                       ? "flex items-center gap-2 text-red-500"
@@ -181,7 +181,7 @@ const ResponsiveMenu = ({ showMenu }) => {
 
               <li className="p-2 hover:text-primary">
                 <NavLink
-                  to="/products/:tab"
+                  to="/products/govt"
                   className={({ isActive }) =>
                     isActive
                       ? "flex items-center gap-2 text-red-500"

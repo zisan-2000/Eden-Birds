@@ -21,13 +21,13 @@ const TechnologyList = () => {
   return (
     <div>
       <Navbar2 />
-      <div className="container mx-auto mb-10 mt-10  rounded-lg bg-gray-50 p-6 shadow-xl">
-        <h1 className="mb-10 text-center text-4xl font-bold text-blue-700">
+      <div className="container mx-auto mb-10 mt-10  rounded-lg bg-gray-50 p-6 shadow-xl dark:bg-slate-800">
+        <h1 className="mb-10 text-center text-4xl font-bold text-blue-700 dark:text-purple-500">
           Our Technology
         </h1>
-        <p className="mb-10 text-center text-lg text-gray-700">
+        <p className="mb-10 text-center text-lg text-gray-700 dark:text-white">
           At
-          <span className="animate-bounce text-2xl text-green-700">
+          <span className="ml-1 animate-bounce text-2xl text-green-700 dark:text-orange-500">
             EDEN BIRDS
           </span>
           , we are at the forefront of technological innovation. Our software

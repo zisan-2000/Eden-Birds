@@ -299,7 +299,7 @@ const Navbar2 = () => {
 
               <li className="group relative cursor-pointer">
                 <NavLink
-                  to="/products/govt"
+                  to="/technologies/frontend"
                   className={({ isActive }) =>
                     isActive
                       ? "flex h-12 items-center gap-2"

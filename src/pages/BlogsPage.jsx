@@ -36,7 +36,7 @@ const BlogsPage = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Navbar2 />
-      <main className="flex-grow bg-gray-100 py-10">
+      <main className="flex-grow bg-gray-100 py-10 dark:bg-slate-800">
         <div className="container mx-auto">
           <h1 className="heading">Blogs</h1>
           <BlogsList blogs={blogsData} />

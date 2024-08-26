@@ -39,13 +39,15 @@ const ContactForm = () => {
       <Navbar2 />
       <div className="flex min-h-screen flex-col justify-between bg-slate-100 dark:bg-slate-800">
         <div className="container mx-auto flex flex-col items-center justify-center space-y-8 p-8 md:flex-row md:gap-20 md:space-x-12 md:space-y-0">
-          <div className="mb-8 w-full max-w-md  rounded-lg bg-gray-800 p-8 shadow-lg md:mb-0">
-            <h2 className="mb-6 text-3xl font-bold text-white">Contact Us</h2>
+          <div className="mb-8 w-full max-w-md  rounded-lg bg-slate-200 p-8 shadow-lg dark:bg-slate-700 md:mb-0">
+            <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
+              Contact Us
+            </h2>
             <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-black dark:text-white"
                 >
                   Name
                 </label>
@@ -55,14 +57,14 @@ const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-gray-700 px-3 py-2 text-white focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-white focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                   placeholder="Enter your name"
                 />
               </div>
               <div className="mb-4">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-black dark:text-white"
                 >
                   Email
                 </label>
@@ -72,14 +74,14 @@ const ContactForm = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-gray-700 px-3 py-2 text-white focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                   placeholder="Enter your email"
                 />
               </div>
               <div className="mb-4">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-300"
+                  className="block text-sm font-medium text-black dark:text-white"
                 >
                   Message
                 </label>
@@ -88,7 +90,7 @@ const ContactForm = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="mt-1 block w-full rounded-md bg-gray-700 px-3 py-2 text-white focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                  className="mt-1 block w-full rounded-md bg-slate-100 px-3 py-2 text-black focus:border-blue-500 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50"
                   placeholder="Enter your message"
                   rows="4"
                 />
@@ -101,8 +103,10 @@ const ContactForm = () => {
               </button>
             </form>
           </div>
-          <div className="w-full max-w-lg rounded-lg bg-gray-800 p-8 shadow-md">
-            <h2 className="mb-6 text-3xl font-bold text-white">Our Location</h2>
+          <div className="w-full max-w-lg rounded-lg bg-slate-200 p-8 shadow-md dark:bg-slate-700">
+            <h2 className="mb-6 text-3xl font-bold text-black dark:text-white">
+              Our Location
+            </h2>
             <div className="mb-4">
               <div className="mb-2 flex items-center">
                 <svg
@@ -117,7 +121,7 @@ const ContactForm = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <p className="text-white">
+                <p className="text-black dark:text-white">
                   ECB Chattar, Dhaka Cantonment, Tower-71, Dhaka, Bangladesh
                 </p>
               </div>
@@ -134,7 +138,9 @@ const ContactForm = () => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <p className="text-white">Email: info@example.com</p>
+                <p className="text-black dark:text-white">
+                  Email: info@example.com
+                </p>
               </div>
             </div>
             <div className="relative mb-4 h-96 overflow-hidden rounded-lg shadow-lg">

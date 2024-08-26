@@ -93,21 +93,21 @@ const Cloud = () => {
     <div>
       <Navbar2 />
       <div className="container mx-auto mb-16 mt-8">
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="grid gap-8  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {cards.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105"
+              className="flex flex-col items-center rounded-lg bg-white p-6 shadow-lg transition-transform duration-300 hover:scale-105 dark:bg-slate-800"
             >
               <img
                 src={card.icon}
                 alt={card.title}
                 className="mb-4 h-12 w-12 animate-spin-slow"
               />
-              <h3 className="mb-2 transform animate-pulse text-xl font-bold text-indigo-600 transition-transform duration-300 hover:scale-105">
+              <h3 className="mb-2 transform animate-pulse text-xl font-bold text-indigo-600 transition-transform duration-300 hover:scale-105 dark:text-purple-400">
                 {card.title}
               </h3>
-              <p className="text-center text-gray-700">
+              <p className="text-center text-gray-700 dark:text-white">
                 {card.text.substring(0, card.text.indexOf(".") + 1)}
                 {visibleText[index] && (
                   <span>{card.text.substring(card.text.indexOf(".") + 1)}</span>
@@ -115,7 +115,7 @@ const Cloud = () => {
               </p>
               <button
                 onClick={() => toggleTextVisibility(index)}
-                className="mt-4 rounded-md bg-indigo-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-indigo-700"
+                className="mt-4 rounded-md bg-indigo-600 px-4 py-2 text-white transition-colors duration-300 hover:bg-indigo-700 dark:text-white"
               >
                 {visibleText[index] ? "Show Less" : "Learn More"}
               </button>
