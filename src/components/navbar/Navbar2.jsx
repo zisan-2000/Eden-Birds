@@ -35,19 +35,19 @@ const Navbar2 = () => {
       <header
         data-aos="fade"
         data-aos-duration="300"
-        className="sticky top-0 z-[99] border-b-[1px] border-primary/50 bg-gradient-to-l from-blue-900 via-blue-800 to-blue-900 text-white shadow-lg"
+        className=" sticky top-0 z-[99] border-b-[1px] border-primary/50 bg-gradient-to-l from-blue-900 via-blue-800 to-blue-900 text-white shadow-lg"
       >
-        <nav className="container mx-auto flex h-[70px] items-center justify-between px-4 py-2 md:px-0">
+        <nav className="container mx-auto flex h-[70px] items-center justify-between px-4 py-2 ">
           <div className="flex items-center">
-            <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white shadow-md transition duration-300 hover:shadow-xl md:h-16 md:w-16">
+            <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white shadow-md transition duration-300 hover:shadow-xl sm:h-12 sm:w-12 md:h-14 md:w-14">
               <img
                 src={logo}
                 alt="logo"
-                className="scale-160 h-full w-full transform object-cover"
+                className="h-full w-full object-cover"
                 style={{ filter: theme === "dark" ? "invert(1)" : "invert(0)" }}
               />
             </div>
-            <div className="ml-3 text-xl md:text-3xl">
+            <div className="ml-3 text-lg sm:text-xl md:text-2xl">
               <NavLink
                 to="/"
                 className="flex items-center font-serif tracking-wide text-white transition duration-300 ease-in-out hover:text-primary"
@@ -62,15 +62,15 @@ const Navbar2 = () => {
             </div>
           </div>
 
-          <div className="hidden items-center gap-6 md:flex">
-            <ul className="flex items-center gap-4">
+          <div className="hidden items-center gap-4 md:flex">
+            <ul className="flex items-center gap-3">
               <li className="group relative cursor-pointer">
                 <NavLink
                   to=""
                   className={({ isActive }) =>
                     isActive
-                      ? "flex h-[72px] items-center gap-[2px]"
-                      : "flex h-[72px] items-center gap-[2px]"
+                      ? "flex items-center gap-2"
+                      : "flex items-center gap-2"
                   }
                 >
                   Hover Here{" "}
@@ -85,8 +85,8 @@ const Navbar2 = () => {
                         to="/"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Home
@@ -97,34 +97,32 @@ const Navbar2 = () => {
                         to="/about"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         About Us
                       </NavLink>
                     </li>
-
                     <li className="p-2 hover:bg-violet-200">
                       <NavLink
                         to="/team"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Meet Our Executive Team
                       </NavLink>
                     </li>
-
                     <li className="p-2 hover:bg-violet-200">
                       <NavLink
                         to="/Cloud"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Services
@@ -135,8 +133,8 @@ const Navbar2 = () => {
                         to="/contact"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Contact
@@ -147,21 +145,20 @@ const Navbar2 = () => {
                         to="/blogs"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Blogs
                       </NavLink>
                     </li>
-
                     <li className="p-2 hover:bg-violet-200">
                       <NavLink
                         to="/privacy"
                         className={({ isActive }) =>
                           isActive
-                            ? "flex h-12 items-center gap-2 text-red-500"
-                            : "flex h-12 items-center gap-2"
+                            ? "flex items-center gap-2 text-red-500"
+                            : "flex items-center gap-2"
                         }
                       >
                         Privacy policy
@@ -170,14 +167,13 @@ const Navbar2 = () => {
                   </ul>
                 </div>
               </li>
-
               <li className="group relative cursor-pointer">
                 <NavLink
                   to=""
                   className={({ isActive }) =>
                     isActive
-                      ? "flex h-12 items-center gap-2"
-                      : "flex h-12 items-center gap-2"
+                      ? "flex items-center gap-2"
+                      : "flex items-center gap-2"
                   }
                 >
                   Services{" "}
@@ -206,20 +202,19 @@ const Navbar2 = () => {
                             Development
                           </h2>
                           <ul className="flex flex-col gap-1">
-                            <li className=" mb-2 cursor-pointer hover:text-primary">
+                            <li className="mb-2 cursor-pointer hover:text-primary">
                               <NavLink
                                 to="/Cloud"
                                 className={({ isActive }) =>
                                   isActive
-                                    ? "flex  items-center gap-2 text-red-500"
-                                    : "flex  items-center gap-2"
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
                                 }
                               >
                                 Big Data Analysis & Dashboard Design
                               </NavLink>
                             </li>
-
-                            <li className=" mb-2 cursor-pointer hover:text-primary">
+                            <li className="mb-2 cursor-pointer hover:text-primary">
                               <NavLink
                                 to="/services"
                                 className={({ isActive }) =>
@@ -231,14 +226,13 @@ const Navbar2 = () => {
                                 Regular Services
                               </NavLink>
                             </li>
-
                             <li className="cursor-pointer hover:text-primary">
                               <NavLink
                                 to="/Web"
                                 className={({ isActive }) =>
                                   isActive
-                                    ? "flex h-12 items-center gap-2 text-red-500"
-                                    : "flex h-12 items-center gap-2"
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
                                 }
                               >
                                 Web Development
@@ -256,21 +250,20 @@ const Navbar2 = () => {
                                 to="/IOS"
                                 className={({ isActive }) =>
                                   isActive
-                                    ? "flex h-12 items-center gap-2 text-red-500"
-                                    : "flex h-12 items-center gap-2"
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
                                 }
                               >
                                 iOS App Development
                               </NavLink>
                             </li>
-
                             <li className="mb-3 cursor-pointer hover:text-primary">
                               <NavLink
                                 to="/Mobile"
                                 className={({ isActive }) =>
                                   isActive
-                                    ? "flex h-12 items-center gap-2 text-red-500"
-                                    : "flex h-12 items-center gap-2"
+                                    ? "flex items-center gap-2 text-red-500"
+                                    : "flex items-center gap-2"
                                 }
                               >
                                 Mobile App Development
@@ -283,27 +276,13 @@ const Navbar2 = () => {
                   </div>
                 </div>
               </li>
-
-              {/* <li className="cursor-pointer hover:text-primary">
-                <NavLink
-                  to="/Technologies"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "flex  items-center gap-2 text-red-500"
-                      : "flex  items-center gap-2"
-                  }
-                >
-                  Technologies
-                </NavLink>
-              </li> */}
-
               <li className="group relative cursor-pointer">
                 <NavLink
                   to="/technologies/frontend"
                   className={({ isActive }) =>
                     isActive
-                      ? "flex h-12 items-center gap-2"
-                      : "flex h-12 items-center gap-2"
+                      ? "flex items-center gap-2"
+                      : "flex items-center gap-2"
                   }
                 >
                   Technologies
@@ -348,7 +327,6 @@ const Navbar2 = () => {
                             </li>
                           </ul>
                         </div>
-
                         <div>
                           <h2 className="text-md mb-2 font-semibold">Other</h2>
                           <ul className="flex flex-col gap-1">
@@ -371,14 +349,13 @@ const Navbar2 = () => {
                   </div>
                 </div>
               </li>
-
               <li className="group relative cursor-pointer">
                 <NavLink
                   to="/products/govt"
                   className={({ isActive }) =>
                     isActive
-                      ? "flex h-12 items-center gap-2"
-                      : "flex h-12 items-center gap-2"
+                      ? "flex items-center gap-2"
+                      : "flex items-center gap-2"
                   }
                 >
                   Our Products
@@ -481,26 +458,24 @@ const Navbar2 = () => {
                   </div>
                 </div>
               </li>
-
               <li className="cursor-pointer">
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
                     isActive
-                      ? "flex h-12 items-center gap-2 text-red-500"
-                      : "flex h-12 items-center gap-2"
+                      ? "flex items-center gap-2 text-red-500"
+                      : "flex items-center gap-2"
                   }
                 >
                   Contact
                 </NavLink>
               </li>
-
               <li className="relative cursor-pointer">
                 <NavLink
                   to="/career"
                   className={({ isActive }) =>
                     isActive
-                      ? "flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 font-bold uppercase text-red-500 text-white transition duration-300 hover:from-blue-700 hover:to-blue-900"
+                      ? "flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 font-bold uppercase text-red-500 transition duration-300 hover:from-blue-700 hover:to-blue-900"
                       : "flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-3 font-bold uppercase text-white transition duration-300 hover:from-blue-700 hover:to-blue-900"
                   }
                 >
@@ -510,7 +485,6 @@ const Navbar2 = () => {
                   </span>
                 </NavLink>
               </li>
-
               <div className="flex items-center gap-4 rounded-lg bg-gradient-to-r from-violet-500 to-indigo-500 p-2 shadow-lg">
                 <li className="list-none">
                   <BiPhoneCall className="h-[40px] w-[40px] transform rounded-full bg-primary p-2 text-2xl text-white transition duration-300 ease-in-out hover:scale-110 hover:bg-primary/90" />
@@ -526,7 +500,6 @@ const Navbar2 = () => {
                   </div>
                 </li>
               </div>
-
               {theme === "dark" ? (
                 <BiSolidSun
                   onClick={() => setTheme("light")}
