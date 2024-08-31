@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/Footer/Footer";
 import Navbar2 from "../components/navbar/Navbar2";
 
-// Importing team member images
-import { default as CEOImage, default as CTOImage } from "../assets/talat.webp";
+// Importing team member images correctly
+import { default as CEOImage, default as CTOImage } from "../assets/talat.webp"; // Assuming you have a different image for the CTO
 
 const TeamListStatic = () => {
   const [theme, setTheme] = useState(
@@ -17,18 +17,21 @@ const TeamListStatic = () => {
       name: "Talat Md. Tawfik Elahi",
       role: "CEO",
       image: CEOImage,
+      portfolioLink: "https://talat-me.vercel.app/", // Added portfolio link for the CEO
     },
     {
       id: 2,
       name: "Talat Md. Taufik Elahi",
       role: "CTO",
       image: CTOImage,
+      portfolioLink: "https://talat-me.vercel.app/",
     },
     {
       id: 3,
       name: "Md. Amenul Islam",
       role: "COO",
-      image: CTOImage,
+      image: CTOImage, // Change to the correct image for the COO
+      portfolioLink: "https://aminul-me.vercel.app/",
     },
   ];
 
@@ -63,7 +66,7 @@ const TeamListStatic = () => {
       <Navbar2 toggleTheme={toggleTheme} />
       <div className="container mx-auto justify-center px-5 py-10 text-center dark:bg-slate-800 md:min-h-screen">
         <h1 className="heading2 md:text-5xl">Meet Our Executive Team</h1>
-        <div className="container mx-auto ">
+        <div className="container mx-auto">
           {roleOrder.map(
             (role) =>
               groupedTeamMembers[role] && (
@@ -104,6 +107,18 @@ const TeamListStatic = () => {
                           >
                             {member.role}
                           </p>
+
+                          {/* Conditionally render portfolio button for CEO */}
+                          {member.portfolioLink && (
+                            <a
+                              href={member.portfolioLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="mt-4 inline-block rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+                            >
+                              Visit Portfolio
+                            </a>
+                          )}
                         </div>
                       </div>
                     ))}
